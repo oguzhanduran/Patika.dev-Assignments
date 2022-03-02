@@ -1,0 +1,24 @@
+.avatar {
+    height: 125px;
+    width: 125px;
+    border-radius: 100%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.avatar-box {
+    text-align: center;
+}
+
+.height {
+    height: 300px;
+}
+
+.color {
+    background-color: whitesmoke;);
+}
+
+.footer-row {
+    height: 200px;
+    padding: 20px;
+}

@@ -1,0 +1,12 @@
+ul {
+    display: inline-block;
+    text-align:left;
+   }
+
+#body-color {
+    background-color: #E9ECEF;
+}
+
+.link:hover {
+    color:green;
+  }

@@ -1,0 +1,15 @@
+{
+  "name": "first-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "yapılanlar.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oguzhan Duran",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}

@@ -1,0 +1,212 @@
+.header {
+  list-style-type: none; /* lislerin başındaki bullet point vs gibi işaretleri silmek için kullanılır. */
+  margin: 10px;
+  overflow: hidden; /* Overflow (taşma) özelliği içerik öğesinin kutusundan taşması durumunda ne olacağını belirtir.hidden ile eleman kutusundan taşan içerik kırpılır ve içeriğin geri kalan kısmı görünmez olur. */
+  margin-right: 16px;
+  font-family: arial,sans-serif;
+  font-size: 13px;
+  }
+
+/* Profil fotosu değiştirildi, 32px olarak ayarlandı ve fotoğrafın kenarları yarıçap özelliği ile düzenlendi. */
+  #img {
+    width:32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+#voiceSearchButton {
+  display: flex;
+  height: 24px;
+  margin: 5px;
+  position: relative; /* Bir nesneye position:relative; dediğimizde nesne gene normal akış içerisinde olmaya devam eder ancak top, right, bottom ve left özelliklerini kullanma fırsatı verir. */
+  cursor: pointer; /* imlec ilgili elementin üzerinde el işareti oluşturur.*/
+}
+
+/* Üstteki alan float ile sağ tarafa alındı.  */
+.headerli a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none; /* css text-decoration özelliği en çok bir metnin altını çizmek(underline), üstünü çizmek(line-through) ya da metnin üzerine çizgi koymak(overline) için kullanılır. */ 
+  float: right;
+  
+}
+
+
+
+
+.headerli a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  text-align: center;
+  margin: 100px;
+}
+
+
+.search-area {
+  background: #fff;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  box-shadow: none; /* Kutulara gölge uygular */
+  z-index: 3; /*z ekseninde konum belirler*/
+  height: 44px;
+  margin: 0 auto;
+  margin-top: -77px;
+  width: 582px;
+  border-radius: 15px; /* Border-radius 15px yapıldı element kenarlarını yuvarlamak için*/
+}
+
+.search-area:hover {
+box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 16px;
+  padding-left: 14px;
+}
+
+.search-img {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+
+.search-img span {
+  color: #9aa0a6;
+  height: 20px;
+  width: 20px;
+  margin-top: 0px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 24px;  /*div elemanlarının satırlarının arasındaki yüksekligi belirler*/
+  position: relative;
+}
+
+
+
+.input-enter {
+  display: flex;
+  flex: 1; /*tüm esnek ögelerin aynı uzunlukta olmasına izin verir*/
+  flex-wrap: wrap; /*esnek ogeleri birden fazla satırda soldan saga sıralar*/
+}
+
+.input-area {
+  color: transparent;
+  flex: 100%;
+  white-space: pre;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  display: block;
+}
+
+
+.input {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  margin-top: -68px;
+  font: 16px arial, sans-serif;
+  line-height: 87px;
+  height: 34px !important;
+  text-rendering: auto;
+  letter-spacing: normal; /*harfler arasındaki boşluğu belirler*/
+  word-spacing: normal; /*kelimeler arasındaki boşluğu belirler*/
+  text-transform:none; /* metnin büyük kücük harf kullanımını belirler /tamamı buyuk harf kucuk harf gibi*/
+  text-indent: 0px; /*metnin ilk satırına girinti verir*/
+  text-shadow: none; /*metne gölge verir*/
+  text-align: start;
+  appearance: textfield;
+  cursor: text;
+  width: 480px; /* Genişlik 480px yapıldı. */
+  border: none; /* Kenarlık silindi */
+  
+}
+
+.buttons{
+  display: flex; /* CSS3 ile birlikte gelen flex sayfa içindeki elemanların kolayca yerleştirilmesi için kullanılır. */
+  margin-top: 16px;
+  justify-content: center; /*Flex özelliğine sahip olan bir kapsayıcının yatay eksende nasıl hizalanacağını ayarlar. Objeler başta mı, ortada mı, sonda mı, aralıklı mı dizileceğine karar vermemizi sağlar. Biz center dediğimiz için ortada hizaladı.*/
+  align-items: center; /*Bu özellik ise justify-content‘in yatay eksende yaptığı şeyleri dikey eksende yapmaya yarar. */
+ 
+  
+}
+
+.googlesearch {
+  
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  min-width: 54px;  /* span ogesinin minimum genişliğini belirler*/
+  text-align: center;
+  cursor: pointer;
+  user-select: none; /*div ögesinin metninin imlecle seçilmesini engeller*/
+  border: 1px solid  #f2f2f2;  /* solid burda düz kenarlık anlamına gelir, mesela dotted yazsaydık solid yerine, kenarlık noktalı olurdu. */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5f6368;
+  font-size: 14px;
+  height: 36px;
+  
+}
+
+.feelinglucky {
+  padding: 0 16px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid  #f2f2f2;
+  font-family: Arial, Helvetica, sans-seri, ;
+  font-size: 14px;
+  color: #5f6368; 
+  height: 36px;
+  
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #dfe1e5;
+  border-top: 1px solid #dadce0;
+  position: fixed; /*bir elementin konumunu belirler sabit yapışkan gibi */
+  bottom: 0; /* alttan boşluk ayarlar */
+  width: 100%;
+  margin-left: -8px;
+  line-height: 10px;
+  background-color:  #f2f2f2;
+  list-style-type: none; /* Bullet pointleri yok etmek için kullaıldı. */
+ 
+}
+
+.footerli {
+  float: left;
+}
+
+.footerli a {
+  display: block;
+  color: #70757a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin-left: 14px;
+  margin-right: -20px;
+}
+
+.footerli a:hover {
+  text-decoration: underline;
+}
